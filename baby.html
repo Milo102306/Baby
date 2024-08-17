@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="heart.css">
+  </head>
+  
+  <body>
+    <div class="heart-button"></div>
+    <div class="content">
+      <!-- your content here -->
+    </div>
+  
+    <script>
+      const heartButton = document.querySelector(".heart-button");
+      const content = document.querySelector(".content");
+  
+      heartButton.addEventListener("click", () => {
+        heartButton.classList.add("clicked");
+      });
+  
+      content.addEventListener("transitionend", () => {
+        if (heartButton.classList.contains("clicked")) {
+          heartButton.style.display = "none";
+        }
+        <a href="harvey.html">
+             <button class="heart-button">❤</button>
+        </a>
+      });
+    </script>
+  </body>
